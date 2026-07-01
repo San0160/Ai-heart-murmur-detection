@@ -41,6 +41,8 @@ async def predict(file : UploadFile = File(...)):
 
     prediction, confidence = prediction_pipeline.main(file_path)   
 
+    os.remove(file_path)
+
     return {
         "prediction": prediction,
         "status": "SUCESSS",
