@@ -14,7 +14,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://ai-heart-murmur-zta8-fjkc3le5y-san160.vercel.app",
+        "https://ai-heart-murmur-detection-zta8-hwogc75bx-san160.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
